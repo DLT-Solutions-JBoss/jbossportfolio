@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+  .logo {
+    background-size: cover;
+    height: 58px;
+    width: 180px;
+    margin-top: 6px;
+  }
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var setsHost = is_ssl ? "https://www.orbitera.com/c2m/" : "http://www.orbitera.com/c2m/";
+  document.write(unescape("%3Cscript src='" + setsHost + "js/widget_over.js?_t="+(new Date).getTime()+"' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript" charset="utf-8">
+  var orbitera_widget_options = {};
+  orbitera_widget_options.display = "overlay";
+  orbitera_widget_options.placement = "hidden"; // "left","hidden"
+  orbitera_widget_options.account = "dlt";
+  orbitera_widget_options.page = "testdrives";
+  // Optionally you can specifying the Test Drive to be used with this widget, like this:
+  // orbitera_widget_options.page = "testdrives/view/TEST_DRIVE_ID";
+  orbitera_widget_options.orbiteraURL = setsHost;
+  var orbitera_widget = new OrbiteraWidget.widget(orbitera_widget_options);
+</script>
+
+This Test Drive from DLT Solutions provides customers with a free, hands-on experience with Red Hat OpenShift Enterprise, an open PaaS solution on AWS. In this test drive, you can discover how to help your development teams deliver applications faster to meet growing business demands. And with automated provisioning, developers can begin coding in minutes and IT operations maintains control.  By moving to a PaaS environment, your customers can increase the velocity, efficiency, and scalability of their IT service delivery, speed development, and accelerate time to market for applications and services.
+
+<p><a class="button btn-small btn-non-block btn-gold" onclick="orbitera_widget.show();">Try it now free</a></p>
+
+<footer>
+   <div class="logo"><a href="https://www.openshift.com/"></a></div>
+</footer>
+</body>
+</html>
